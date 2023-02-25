@@ -240,38 +240,37 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 
-# In[29]:
-
-
-import pickle
-
-
-# In[30]:
-
-
-filename = 'Churn_predicted.pkl'
-pickle.dump(Classifier,open(filename,'wb'))
-
-
-# In[31]:
-
-
-loaded_model = pickle.load(open('Churn_predicted.pkl','rb'))
-
-
-# In[ ]:
 
 
 
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
