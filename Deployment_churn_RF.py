@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 
-from sklearn.metrics import confusion_matrix
+
 
 
 
@@ -216,6 +216,7 @@ Classifier.fit(Xtrain_os, ytrain_os)
 
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 y_pred = Classifier.predict(Xtest)
 print(confusion_matrix(ytest,y_pred))
 print(accuracy_score(ytest,y_pred))
