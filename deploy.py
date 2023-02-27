@@ -77,7 +77,7 @@ st.write(churn)
 # In[7]:
 
 
-df = pd.read_csv("E:/Userfiles/Download/Churn.csv")
+df = pd.read_csv("https://github.com/SundaramAyyappan/deploy/blob/main/Churn%20(1).csv")
 df
 
 
