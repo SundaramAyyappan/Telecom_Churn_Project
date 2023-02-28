@@ -10,7 +10,7 @@ import pickle
 import streamlit as st
 
 
-loaded_model = pickle.load(open("E:/Userfiles/Desktop/Python/project/churn project/Churn_prediction.sav",'rb'))
+loaded_model = pickle.load(open("https://github.com/SundaramAyyappan/deploy/blob/main/Churn_prediction.sav",'rb'))
 
 #Creating a function for prediction
 
