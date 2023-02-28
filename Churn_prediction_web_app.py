@@ -61,7 +61,8 @@ def main():
     st.success(Churn)
     
     
-    
+    if __name__ == '__main__':
+    main()
 
 
 
