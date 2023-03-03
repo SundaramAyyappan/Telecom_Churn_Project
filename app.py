@@ -59,7 +59,7 @@ def main():
     
     #creating button for prediction
     if st.button('Churn Result'):
-        Churn = Churn_prediction([voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls])
+        Churn = Churn_prediction(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls)
     
     
     st.success('The output is {}'.format(Churn))
