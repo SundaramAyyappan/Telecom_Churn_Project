@@ -19,7 +19,7 @@ classifier=pickle.load(pickle_in)
 def welcome():
     return "Welcome All"
 
-def predict_note_authentication(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls):
+def Churn_prediction(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls):
     
     prediction=classifier.predict([[voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls]])
     print(prediction)
@@ -32,7 +32,7 @@ def main():
     st.title('Churn prediction Web App')
     html_temp = """
     <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
+    <h2 style="color:white;text-align:center;">Streamlit Churn Prediction ML App </h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
