@@ -22,8 +22,8 @@ def welcome():
 def predict_note_authentication(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls):
     
     prediction=classifier.predict([[voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls]])
-   print(prediction)
-   return prediction
+    print(prediction)
+    return prediction
 
 
 
