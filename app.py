@@ -23,7 +23,11 @@ def Churn_prediction(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, i
     
     prediction=classifier.predict([[voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls]])
     print(prediction)
-    return prediction
+    if (prediction[0] == 0):
+        return 'The person will not be churned'
+    else:
+        return 'The person will be churned'
+    
 
 
 
@@ -62,7 +66,7 @@ def main():
         Churn = Churn_prediction(voice_plan_yes, voice_messages, intl_plan_yes, intl_mins, intl_calls, intl_charge, day_mins, day_calls, day_charge, eve_mins, eve_calls, eve_charge, night_mins, night_calls, night_charge, customer_calls)
     
     
-    st.success('The output is {}'.format(Churn))
+    st.success(Churn)
     
     
     
